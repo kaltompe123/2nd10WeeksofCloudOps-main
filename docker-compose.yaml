@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3"
 services:
   frontend:
     build:
@@ -18,12 +18,12 @@ services:
       dockerfile: Dockerfile
     container_name: backend-app
     ports:
-      - "86:80"
+      - "84:80"
     environment:
       - DB_HOST=mysql
       - DB_USERNAME=admin
       - DB_PASSWORD=Devops123
-      - PORT=3306
+      - DB_PORT=3306
     networks:
       - appnet
     depends_on:
@@ -44,9 +44,8 @@ services:
     networks:
       - appnet
     # volumes:
-    # - ./mysql_data:/var/lib/mysql
+    #   - ./mysql_data:/var/lib/mysql
 
 networks:
   appnet:
     driver: bridge
-
