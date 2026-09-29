@@ -33,7 +33,7 @@ const Books = () => {
 
   return (
     <div>
-      <h1>Welcomt to MultiCloud with Books project </h1>
+      <h1>Welcome to Project </h1>
       <div className="books">
         {books.map((book) => (
           <div key={book.id} className="book">
