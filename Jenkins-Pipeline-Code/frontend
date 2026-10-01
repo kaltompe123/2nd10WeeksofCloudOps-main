@@ -2,7 +2,7 @@ pipeline {
     agent any 
        
    environment {
-      AWS_PATH_FOR_ECR = "010419877410.dkr.ecr.us-east-1.amazonaws.com"          
+      AWS_PATH_FOR_ECR = "905418334556.dkr.ecr.us-east-1.amazonaws.com"          
     }
 
     stages {
